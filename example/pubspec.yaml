@@ -1,0 +1,27 @@
+name: example
+description: A test app for Master Fontify.
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  master_fontify:
+    path: ../
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: packages/master_fontify/fonts/arabic/cairo/Cairo-Regular.ttf
+        - asset: packages/master_fontify/fonts/arabic/cairo/Cairo-Bold.ttf
+          weight: 700
+    - family: Tajawal
+      fonts:
+        - asset: packages/master_fontify/fonts/arabic/Tajawal/Tajawal-Regular.ttf
+        - asset: packages/master_fontify/fonts/arabic/Tajawal/Tajawal-Bold.ttf
+          weight: 700
